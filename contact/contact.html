@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Contact Information">
+        <meta name="author" content="William B. Bowens">
+        <title>Contact</title> 
+        <link rel="stylesheet" href="../css/Bootstrap.css">
+        <link rel="stylesheet" href="../css/custom.css" type="text/css">
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+ 
+           /*Google font style declaration */
+ 
+             .aldrich-regular {
+                 font-family: "Aldrich", sans-serif;
+                 font-weight: 400;
+                 font-style: normal;
+             }
+
+             .nav-link:hover{
+                color: #e40000;
+            }
+
+
+            .nav-link.disabled {
+                color: #a60000;    /*Link disabled color altered */
+                pointer-events: none;
+                cursor: default;
+            }
+            
+            .shine:hover {
+                color: #e40000;
+            }
+         </style>
+
+
+    </head>
+
+    <body class="aldrich-regular">
+        <header>
+            <!--Navigation Section Start-->
+            <nav class="navbar navbar-expand-sm navbar-toggleable-lg navbar-dark viser shadow-lg mb-3 fixed-top border-bottom border-2">
+                <div class="container-fluid">
+                    <a href="../index.html" class="navbar-brand fst-italic popEffect2">William B. Bowens Portfolio</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <img src="../media/Reca_Red_TP.png" class="img-fluid img-display imageadjusment" alt="The Reca Logo">
+                    <div id="relocate" class="navbar-collapse collapse d-sm-inline-flex">
+                        <ul class="navbar-nav flex-grow-1 mr-auto justify-content-end">
+                            <li class="nav-item popEffect2">
+                                <a href="../index.html" class="nav-link fst-italic fs-4">Home</a>
+                            </li>
+                            <li class="nav-item popEffect2">
+                                <a href="../about/about.html" class="nav-link  fst-italic fs-4">About</a>
+                            </li>
+                            <li class="nav-item popEffect2">
+                                <a href="../resume/resume.html" class="nav-link fst-italic fs-4">Resume</a>
+                            </li>
+                            <li class="nav-item popEffect2"> 
+                                <a href="../portfolio/portfolio.html" class="nav-link  fst-italic fs-4">Portfolio</a>
+                            </li>
+                            <li class="nav-item popEffect2"> 
+                                <a class="nav-link  fst-italic fs-4 disabled">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+        <main>
+
+            <div class="container">
+    
+                <h2 class="fw-bolder rad mt-5 text-light bg-black px-4 specialtext pt-4 pb-4">Feel Free to Reach Out!</h2>
+               
+                <div class="row py-3 pb-5">
+
+                    <div class="col-md-6">
+                        <div class="" style="position: relative; padding-bottom: 94%; height: 0;">
+                            <iframe class="rad reflection" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.0593158706597!2d-78.7040119!3d35.6509102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ac8bd3143b0f53%3A0x6db3d71094436c7f!2sWake%20Technical%20Community%20College%2C%209101%20Fayetteville%20Rd%2C%20Raleigh%2C%20NC%2027603!5e0!3m2!1sen!2sus!4v1699825299622!5m2!1sen!2sus" style="border:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                   
+                    <!--Personal info section-->
+                    <div class="col-md-6 fs-5">
+                       
+                        <ul class="list-group text-center fst-italic">
+                            <li class="list-group-item">Email: wbbowens@my.waketech.edu</li>
+                            <li class="list-group-item">Telephone Number: (123) 456-7890</li>
+                            <li class="list-group-item">Street Address: 9101 Fayetteville Rd, Raleigh, NC 27603</li>
+                            <li class="list-group-item"><a href="https://www.linkedin.com/in/william-bowens-82501a143/" target="_blank"><img src="../media/LinkedInBanner.png" alt="Custom LinkedIn Banner" class="img-fluid popEffect"></a></li>
+                            
+                        </ul>
+                        <img src="../media/Reca_Red_Blk_TX_TP_Copy3.png" alt="Image of the Reca logo" class="img-fluid reflection mb-3 rad border-2">
+                    </div>
+                   
+                </div>
+
+            </div>
+
+             <!--Below is the beginning of the contact form-->
+             <section class="py-2 fade-in-scroll">
+                <div class="container px-2 reflection">
+                  
+                    <div class="bg-black py-2 px-4 px-md-5 mb-5">
+                        <div class="text-center mb-5">
+                            <h2 class="mt-5 specialtext"> Contact Me</h2>
+                        </div>
+                        <div class="row gx-5 justify-content-center">
+                            <div class="col-lg-8 col-xl-6">
+                               
+                                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                                  
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required">
+                                        <label for="name" class="fst-italic">Full name</label>
+                                        <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                                    </div>
+                                   
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email">
+                                        <label for="email" class="fst-italic">Email address</label>
+                                        <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                        <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                                    </div>
+                                   
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required">
+                                        <label for="phone" class="fst-italic">Phone number</label>
+                                        <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                                    </div>
+                                   
+                                    <div class="d-none" id="submitSuccessMessage">
+                                        <div class="text-center mb-3">
+                                            <div class="fw-bolder text-light fst-italic">Form submission successful!</div>
+                                        </div>
+                                    </div>
+                                   
+                                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                                  
+                                    <div class="d-grid"><button class="btn btn-dark btn-lg disabled fst-italic popEffect2" id="submitButton" type="submit">Submit</button></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                  
+                </div>
+                  
+
+            </section>  
+         
+
+               <div class="text-center pt-2 pb-5">
+                <img src="../media/Reca_Black_Red_TP_NW.png" class="img-fluid img-display imageadjusment reflection0" alt="The Reca Logo">
+               </div>
+
+
+               
+
+
+        </main>
+
+        <footer class="py-4 mt-auto viser border-top border-2">
+            
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="medium m-0 text-white fst-italic fs-4">Copyright &copy; William B. Bowens 2024</div></div>
+        
+                    <div class="col-auto">
+                        <h3 class="text-white fst-italic">Connect with me on <a class="shine popEffect" href="https://www.linkedin.com/in/william-bowens-82501a143/" target="_blank">LinkedIn!</a></h3>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <script src="../js/wordentrance.js"></script>
+    </body>
+
+
+</html>

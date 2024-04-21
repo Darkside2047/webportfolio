@@ -1,0 +1,406 @@
+﻿
+
+body, html {
+    height: 100%;
+    
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    margin-top: auto;
+}
+
+video{
+   /* border-radius: 5px;*/
+}
+
+.screen{
+    background-color:black;
+   
+}
+
+
+.container1 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 66.25%; 
+}
+
+.adjusted-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 85%;
+    border: none;
+   /* border-radius: 5px;*/
+}
+
+.rad {
+   /* border-radius: 5px;*/
+   /* text-shadow: 5px 3px 10px #910000;*/
+}
+
+
+/*Text Shadowing effects*/
+
+h2, h3{
+    text-shadow: 1px 1px #9600007d;
+   /*text-shadow: 3px 1px #000000;*/
+}
+
+/*.nav-item{
+
+    text-shadow: 1px 1.2px #a60000;  
+
+}*/
+
+.specialtext{
+    text-shadow: 1px 3px #a60000;    
+}
+
+
+.borderadjust {
+   /* border-radius: 5px;*/
+}
+
+.shine{
+    text-decoration: none;
+    color: white;
+}
+
+.shine:hover {
+    color: #e40000;
+}
+
+.viser {
+    background-color: black;
+}
+
+.rightalign {
+    justify-content: right;
+}
+
+.search:hover {
+    color: black;
+    background-color: #910000;
+    border-color: #910000;
+}
+
+.scale {
+    transform: scale(1, 0.50);
+    transform-origin: top;
+}
+
+
+
+.video-container {
+    float: left; 
+    width: 100%; 
+    margin-left: 15px;
+    height: 90%;
+}
+
+.resume-image{
+    float: left; 
+    margin-right: 15px; 
+    width: 300px; 
+    height: 325px;
+
+}
+
+.profile-image{
+    float: left; 
+    margin-right: 15px; 
+    width: 400px; 
+    height: 400px;
+   /* border-radius: 5%;*/
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(255,255,255,0.4)));
+
+}
+
+.profile-image2{
+    float: right; 
+    margin-right: 15px; 
+    width: 400px; 
+    height: 400px;
+  /*  border-radius: 5%;*/
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(255,255,255,0.4)));
+
+}
+
+
+
+@media screen and (max-width: 520px){
+    .resume-image{
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    .profile-image{
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    .profile-image2{
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+
+}
+
+.image-resize{
+
+    height: auto;
+    width: auto;
+}
+
+
+.attribution{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.attribution:hover{
+    color:  rgb(107, 107, 107);;
+}
+
+
+@media screen and (max-width: 768px){
+    .custom-pad{
+        padding: 5%;
+    }
+    
+}
+
+
+.reflection{
+
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(255,255,255,0.4)));
+
+}
+
+.reflection0{
+    
+   -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+}
+
+
+
+#scale {
+    height: 700px;
+    width: 306px;
+}
+
+#relocate{
+    padding-right: 55px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .video-container {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+}
+
+
+#backgroundVideo{
+    object-fit: cover; 
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    filter: brightness(100%);
+}
+
+/*For background video media adjustments */
+
+@media screen and (max-width: 481px){
+    video{
+        display: none;
+    }
+}
+
+
+
+.background1{
+    background-image: url(../media/galaxy2.png);
+    width: auto;
+    height: auto;
+}
+
+
+.imageadjusment{
+    width: 50px;
+    height: 35px;
+}
+
+.imageadjusment2{
+    width: 300px;
+    height: 400px;
+}
+
+
+#listcolor{
+    background-color: black;
+}
+
+
+
+/*To rotate an image*/
+
+@keyframes flip {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+  .image-rotation {
+   
+    transform-style: preserve-3d;
+   
+    animation: flip 5s linear infinite;
+  }
+
+
+/*Google font style declaration */
+
+.aldrich-regular {
+    font-family: "Aldrich", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+
+/*For image pop effect when hovering */
+
+.popEffect {
+    transition: transform 0.3s ease-in-out; 
+    display: block; 
+    margin: 0 auto; 
+  }
+  
+  .popEffect:hover {
+    transform: scale(1.08); 
+    cursor: pointer; 
+  }
+
+
+  /*For navigation bar */
+
+
+  .popEffect2 {
+    transition: transform 0.3s ease-in-out; 
+  }
+  
+  .popEffect2:hover {
+    transform: scale(1.09); 
+    cursor: pointer; 
+  }
+
+
+  .specialborder {
+  /*  border: .5px solid #000; /* Solid black border */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); /* Soft shadow effect */
+
+  }
+
+
+
+  /*For word entrance effect */
+
+  @media screen and (min-width: 481px){
+
+  .animated-text {
+  /*  position: relative; /* Keeps the position flexible */
+    width: 100%;
+   /* text-align: center;*/
+  }
+  
+  .animated-text span {
+    display: inline-block;
+    opacity: 0;
+    transform: translate(-50px, -50px); /* Start from off the upper left */
+    animation: appear 1s forwards;
+  }
+
+}
+  
+  
+  @keyframes appear {
+    0% {
+      opacity: 0;
+      transform: translate(-50px, -50px); /* Starting state, off the upper left */
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0, 0); /* End state, normal position */
+    }
+  }
+  
+
+
+
+
+
+
+  /*Animation for quote */
+
+  .animate__animated.animate__fadeIn {
+    --animate-duration: 2s;
+    
+  }
+
+
+  /*Animation for images */
+
+.fade-in-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  will-change: opacity, transform;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+  
+  
+  
+
+  
+ 
+
+
+
+
